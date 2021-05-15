@@ -30,3 +30,26 @@ so
 and this will run almost instantly.
 This means the brute-force solution is viable.
 And indeed, after trying everythingm we find that there are not one, not two, but *three* solutions.
+  
+### Brute-Force Code
+```python
+def func(v1, v2, v3):
+    c1 = (not v1) or (not v2) or (not v3)
+    c2 = v1 or (not v2) or v3
+    c3 = v1 or v2 or (not v3)
+    c4 = v1 or (not v2) or (not v3)
+    c5 = (not v1) or v2 or v3
+    return c1 and c2 and c3 and c4 and c5
+    
+found = False
+for v1 in range(2):
+    for v2 in range(2):
+        for v3 in range(2):
+            if func(v1, v2, v3):
+                print("A satisfying assignment was found;", end = " ")
+                print("it is:", end = " ")
+                print("v1 =",v1, ", v2 =",v2, ", v3 =",v3)
+                found = True
+if (not found):
+    print("No Satisfying assignments found.", end = "\n")
+```
