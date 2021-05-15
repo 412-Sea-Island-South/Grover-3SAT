@@ -7,7 +7,7 @@ It's actually a quite simple problem.
 It involves a [boolean](https://en.wikipedia.org/wiki/Boolean) function, *f*, with three boolean variables (the same kinds of variables in algebra).
 We will call those variables var1, var2, and var3.
 Suppose *f* is the function:  
-<img src="https://render.githubusercontent.com/render/math?math=\color{white}f(v1, v2, v3)=(\neg v1 \lor \neg v2 \lor \neg v3) \land (v1 \lor v2 \lor v3) \land (\neg v1 \lor v2 \lor v3) \land (v1 \lor \neg v2 \lor v3) \land (v1 \lor v2 \lor \neg v3)" align="center">
+<img src="https://render.githubusercontent.com/render/math?math=\color{white}f(v1, v2, v3)=(\neg v1 \lor \neg v2 \lor \neg v3) \land (v1 \lor v2 \lor v3) \land (\neg v1 \lor v2 \lor v3) \land (v1 \lor \neg v2 \lor v3) \land (v1 \lor v2 \lor \neg v3)" >
   
 This boolean function is comprised of 5 clauses, which start with '(' and end with ')'.
 In general, there can be *N* clauses.
@@ -19,3 +19,13 @@ For example, in the first clause, the literals are:
 The <img src="https://render.githubusercontent.com/render/math?math=\color{white}\land"> and
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}\lor"> symbols are the boolean and and or symbols.
 *F* is satisfiable if an assignment of the literals to the boolean values causes *f* to evaluate to true.
+
+## An Obvious Solution
+Of course, the easiest way is to just try every single possible value for each of the variables.
+This will run in time <img src="https://render.githubusercontent.com/math?math=\color={white}2^n">.
+Suitable for small values of *n*, but for huge values, tough luck.
+In our case, <img src="https://render.githubusercontent.com/math?math=\color={white}n = 3"> so
+<img src="https://render.githubusercontent.com/math?math=\color={white}2^n = 8">
+and this will run almost instantly.
+This means the brute-force solution is viable.
+And indeed, after trying everythingm we find that there are not one, not two, but *three* solutions.
