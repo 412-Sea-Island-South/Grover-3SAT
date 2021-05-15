@@ -22,12 +22,12 @@ The <img src="https://render.githubusercontent.com/render/math?math=\color{white
 
 ## An Obvious Solution
 Of course, the easiest way is to just try every single possible value for each of the variables.
-This will run in time <img src="https://render.githubusercontent.com/math?math=\color={white}2^n">.
+This will run in time <img src="https://render.githubusercontent.com/math?math=\color{white}2^n">.
 Suitable for small values of *n*, but for huge values, tough luck.
 In our case,
-<img src="https://render.githubusercontent.com/math?math=\color{white}n = 3">
+<img src="https://render.githubusercontent.com/math?math=\color{white}n=3">
 so
-<img src="https://render.githubusercontent.com/math?math=\color{white}2^n = 8">
+<img src="https://render.githubusercontent.com/math?math=\color{white}2^n=8">
 and this will run almost instantly.
 This means the brute-force solution is viable.
 And indeed, after trying everythingm we find that there are not one, not two, but *three* solutions.
