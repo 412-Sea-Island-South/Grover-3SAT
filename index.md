@@ -117,6 +117,7 @@ The problems requires a special format, called DIMACS CNF.
 You can read about it [here](http://www.satcompetition.org/2009/format-benchmarks2009.html).
   
 We will create the oracle for the Grover's Search algorithm, which is the LogicalExpressionOracle component which is helpfully already provided in Qiskit Aqua. It also supports DIMACS CNF format strings and construction of the oracle circuit.
+The quantum solution is just the brute-force solution but sped up quadratically by Grover's Algorithm.
   
 ### Understanding DIMACS CNF
 ```
