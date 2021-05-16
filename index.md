@@ -168,3 +168,27 @@ plot_histogram(result['measurement'])
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81530826/118385477-fd6d9700-b5c3-11eb-8d90-ca2e2b3cb788.png">
 </p>
+  
+## About Me
+Hello there! I'm Max, an innovator at [The Knowledge Society aka TKS](https://tks.world).
+I'm interested in a lot of different emerging technologies, but my main interests right now are Quantum Computing ⚛️, Blockchain 💵, Artificial Intelligence 🤖, and last but not least, Space Tech/Exploration 🚀.
+So yeah, that's basically who I am. You can check out my social media profiles below.  
+<p>
+  <a href="https://www.linkedin.com/in/max-cui-9889641b7/" rel="nofollow noreferrer">
+    <img src = "https://i.stack.imgur.com/gVE0j.png" alt="linkedin">
+    LinkedIn
+  </a> &nbsp;
+  <a href = "https://github.com/TKSMax" rel="nofollow noreferrer">
+    <img src = "https://i.stack.imgur.com/tskMh.png" alt="github">
+    GitHub
+  </a> &nbsp;
+  <a href="https://max-c.medium.com" rel="nofollow noreferrer">
+    Medium
+  </a> &nbsp;
+  <a href = "https://maxmcui.substack.com" rel="nofollow noreferrer">
+    Sub to my Newsletter
+  </a>
+  <a href="https://tksmax.github.io/FocusProjects" rel="nofollow noreferrer">
+    Back to Main Page
+  </a>
+</p>
