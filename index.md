@@ -132,3 +132,32 @@ p cnf 3 5
 - the first line that's not a comment needs to be ```p cnf number_of_variables number_of_clauses```. The cnf meanss cnf format.
 - each line after that is a clause, which consists of number_of_variables values, which must be integers and not null. The line ends with 0, and the literals ```literal``` and ```-literal```. Negative integers are the negation of the variable.
 - For example, a solution can be written as <img src="https://render.githubusercontent.com/render/math?math=\color{white}(\neg v1 \lor \neg v2 \lor \neg v3)">
+  
+### Quantum Code
+```python
+import numpy as np
+from qiskit import *
+from qiskit.visualization import *
+from qiskit.aqua import *
+from qiskit.aqua.algorithms *
+from qiskit.aqua.components.oracles import *
+
+input_3sat = '''
+c example DIMACS-CNF 3-SAT
+p cnf 3 5
+-1 -2 -3 0
+1 -2 3 0
+1 2 -3 0
+1 -2 -3 0
+-1 2 3 0
+'''
+
+oracle = LogicalExpressionOracle(input_3sat)
+grover = Grover(oracle)
+
+backend = BasicAer.get_backend('qasm_simulator')
+quantum_instance = QuantumInstance(backend, shots=1024)
+result = grover.run(quantum_instance)
+print(result['assignment'])
+plot_histogram(result['measurement'])
+```
