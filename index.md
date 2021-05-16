@@ -110,3 +110,21 @@ if (not found):
     <td>Not a Solution</td>
   </tr>
 </table>
+  
+## A Quantum Solution
+We will use Qiskit Aqua (a "submodule" of Qiskit), a Python-based programming language created by IBM for programming quantumc computers.
+The problems requires a special format, called DIMACS CNF.
+You can read about it [here](http://www.satcompetition.org/2009/format-benchmarks2009.html).
+  
+### Understanding DIMACS CNF
+```
+c example DIMACS CNF 3-SAT
+p cnf 3 5
+-1 -2 -3 0
+1 -2 3 0
+1 2 -3 0
+1 -2 -3 0
+-1 2 3 0
+```
+- lines that start with c are comments (c is for comments)
+- the first line that's not a comment needs to be ```p cnf number_of_variables number_of_clauses```
