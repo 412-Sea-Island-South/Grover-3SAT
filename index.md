@@ -29,7 +29,7 @@ so
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}2^n=8">
 and this will run almost instantly.
 This means the brute-force solution is viable.
-And indeed, after trying everythingm we find that there are not one, not two, but *three* solutions.
+And indeed, after trying everything we find that there are not one, not two, but *three* solutions.
   
 ### Brute-Force Code
 ```python
@@ -116,6 +116,8 @@ We will use Qiskit Aqua (a "submodule" of Qiskit), a Python-based programming la
 The problems requires a special format, called DIMACS CNF.
 You can read about it [here](http://www.satcompetition.org/2009/format-benchmarks2009.html).
   
+We will create the oracle for the Grover's Search algorithm, which is the LogicalExpressionOracle component which is helpfully already provided in Qiskit Aqua. It also supports DIMACS CNF format strings and construction of the oralce circuit.
+  
 ### Understanding DIMACS CNF
 ```
 c example DIMACS CNF 3-SAT
@@ -127,4 +129,7 @@ p cnf 3 5
 -1 2 3 0
 ```
 - lines that start with c are comments (c is for comments)
-- the first line that's not a comment needs to be ```p cnf number_of_variables number_of_clauses```
+- the first line that's not a comment needs to be ```p cnf number_of_variables number_of_clauses```. The cnf meanss cnf format.
+- each line after that is a clause, which consists of number_of_variables values, which must be integers and not null. The line ends with 0, and the literals ```literal``` and ```-literal```. Negative integers are the negation of the variable.
+- For example, a solution can be written as
+<img src="https://render.githubusercontent.com/render/math?math=\color{white}(\neg v1 \lor \neg v2 \lor \neg v3)">
