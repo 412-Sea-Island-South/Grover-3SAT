@@ -53,3 +53,60 @@ for v1 in range(2):
 if (not found):
     print("No Satisfying assignments found.", end = "\n")
 ```
+### Brute-Force Solutions
+<table>
+  <tr>
+    <th>V1</th>
+    <th>V2</th>
+    <th>V3</th>
+    <th>Is Solution?</th>
+  </tr>
+  <tr>
+    <td>False</td>
+    <td>False</td>
+    <td>False</td>
+    <td>Solution</td>
+  </tr>
+  <tr>
+    <td>False</td>
+    <td>False</td>
+    <td>True</td>
+    <td>Not a Solution</td>
+  </tr>
+  <tr>
+    <td>False</td>
+    <td>True</td>
+    <td>False</td>
+    <td>Not a Solution</td>
+  </tr>
+  <tr>
+    <td>False</td>
+    <td>True</td>
+    <td>True</td>
+    <td>Not a Solution</td>
+  </tr>
+  <tr>
+    <td>True</td>
+    <td>False</td>
+    <td>False</td>
+    <td>Not A Solution</td>
+  </tr>
+  <tr>
+    <td>True</td>
+    <td>False</td>
+    <td>True</td>
+    <td>Solution</td>
+  </tr>
+  <tr>
+    <td>True</td>
+    <td>True</td>
+    <td>False</td>
+    <td>Solution</td>
+  </tr>
+  <tr>
+    <td>True</td>
+    <td>True</td>
+    <td>True</td>
+    <td>Not a Solution</td>
+  </tr>
+</table>
