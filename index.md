@@ -162,3 +162,5 @@ result = grover.run(quantum_instance)
 print(result['assignment'])
 plot_histogram(result['measurement'])
 ```
+  
+## Project Gallery Showcase
