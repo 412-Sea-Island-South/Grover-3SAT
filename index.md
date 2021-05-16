@@ -164,3 +164,7 @@ plot_histogram(result['measurement'])
 ```
   
 ## Project Gallery Showcase
+<h4 align="center">3SAT Grover's Solutions</h4>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/81530826/118385477-fd6d9700-b5c3-11eb-8d90-ca2e2b3cb788.png">
+</p>
