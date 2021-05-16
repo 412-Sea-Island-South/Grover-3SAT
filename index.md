@@ -54,7 +54,7 @@ if (not found):
     print("No Satisfying assignments found.", end = "\n")
 ```
 ### Brute-Force Solutions
-<table>
+<table align="center">
   <tr>
     <th>V1</th>
     <th>V2</th>
